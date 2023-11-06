@@ -3,7 +3,7 @@
     "run:debug": "cargo run",
     "update": "cargo update",
     "server:watch": "cargo watch -q -c -w src/ -x run",
-    "tests:watch": "cargo watch -q -c -w tests/ -x \"test -q quick_dev -- --nocapture\"",
+    "examples:run": "cargo run --example quick_dev",
     "kill:8080": "lsof -i:8080 -t | xargs kill -9",
     "lsof:8080": "lsof -i:8080"
   }
