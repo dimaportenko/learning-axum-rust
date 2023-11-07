@@ -1,6 +1,9 @@
 # By Default, Ignore any .*, except .gitignoreexam
-# .*
+.*
 !.gitignore
+
+# -- NeoVim
+!.nvim/
 
 # -- Rust
 # For .cargo/config.toml

@@ -2,7 +2,7 @@
   "commands": {
     "run:debug": "cargo run",
     "update": "cargo update",
-    "server:watch": "cargo watch -q -c -w src/ -x run",
+    "server:watch": "cargo watch -q -c -w src/ -w .cargo/ -x run",
     "examples:run": "cargo run --example quick_dev",
     "kill:8080": "lsof -i:8080 -t | xargs kill -9",
     "lsof:8080": "lsof -i:8080"
