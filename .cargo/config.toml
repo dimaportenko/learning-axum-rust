@@ -2,4 +2,9 @@
 [env]
 
 # Scope down tracing, to filter out external lib tracing 
-RUST_LOG = "axum_course=debug"
+RUST_LOG="axum_course=debug"
+
+
+## -- ConfigMap
+
+SERVICE_WEB_FOLDER="web-folder/"

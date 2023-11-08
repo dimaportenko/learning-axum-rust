@@ -2,12 +2,14 @@
 
 // region:    --- Modules
 
+mod config;
 mod ctx;
 mod error;
 mod log;
 mod model;
 mod web;
 
+pub use config::config;
 pub use self::error::{Error, Result};
 
 use crate::model::ModelManager;
