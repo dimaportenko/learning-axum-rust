@@ -1,6 +1,8 @@
 {
   "commands": {
+    "pg:docker": "docker run --rm --name pg -p 5432:5432  -e POSTGRES_PASSWORD=welcome  postgres:15",
     "run:debug": "cargo run",
+    "run:backtrace": "RUST_BACKTRACE=1 cargo run",
     "update": "cargo update",
     "server:watch": "cargo watch -q -c -w src/ -w .cargo/ -x run",
     "examples:run": "cargo run --example quick_dev",
