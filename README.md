@@ -16,3 +16,13 @@ docker exec -it -u postgres pg psql
 # In psql command line started above.
 ALTER DATABASE postgres SET log_statement = 'all';
 ```
+
+## Unit Test (watch)
+
+```sh
+cargo watch -q -c -x "test -- --nocapture"
+
+# Specific test with filter.
+cargo watch -q -c -x "test model::task::tests::test_create -- --nocapture"
+```
+

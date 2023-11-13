@@ -5,6 +5,9 @@
 RUST_LOG="axum_course=debug"
 
 
-## -- ConfigMap
+## -- Secrets
+SERVICE_DB_URL="postgres://app_user:dev_only_pwd@localhost/app_db"
 
+
+## -- ConfigMap
 SERVICE_WEB_FOLDER="web-folder/"
